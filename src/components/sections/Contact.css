@@ -1,0 +1,75 @@
+.contact {
+  background: var(--c-espresso);
+  padding-block: var(--section-y);
+  color: var(--c-foam);
+}
+.contact__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: center;
+}
+.contact__eyebrow {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--c-caramel);
+  margin-bottom: 16px;
+}
+.contact__title {
+  font-size: clamp(28px, 4vw, 52px);
+  font-style: italic;
+  color: var(--c-cream);
+  margin-bottom: 32px;
+}
+.contact__address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 36px;
+  color: rgba(253,243,231,.65);
+  font-size: 15px;
+}
+.contact__address a { transition: color .2s; }
+.contact__address a:hover { color: var(--c-gold); }
+
+.contact__horarios h3 {
+  font-family: var(--f-display);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--c-cream);
+  margin-bottom: 12px;
+}
+.contact__horario-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: rgba(253,243,231,.6);
+  padding-block: 6px;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  max-width: 320px;
+}
+.contact__ig { margin-top: 36px; }
+
+.contact__map-placeholder {
+  aspect-ratio: 4/3;
+  background: var(--c-roast);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.contact__map-inner {
+  text-align: center;
+  color: rgba(253,243,231,.4);
+}
+.contact__map-inner p { font-size: 15px; margin-bottom: 8px; }
+.contact__map-inner small { font-size: 12px; }
+
+@media (max-width: 768px) {
+  .contact__inner { grid-template-columns: 1fr; }
+}

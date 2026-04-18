@@ -1,0 +1,22 @@
+.footer {
+  background: #0D0805;
+  padding-block: 32px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer__brand {
+  font-family: var(--f-display);
+  font-size: 18px;
+  color: rgba(253,243,231,.5);
+  letter-spacing: 0.05em;
+}
+.footer__copy {
+  font-size: 13px;
+  color: rgba(253,243,231,.3);
+}
